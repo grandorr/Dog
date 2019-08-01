@@ -1,24 +1,3 @@
-# README
+#Dog Stoll Dogsitter City
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Dans cette application on met en relation les Dogsitter et les Dog Chaque Dogditter et chaque Dog appartient à une seule City Chaque Stoll associe un Dogsitter et un Dog

@@ -2,12 +2,12 @@ City.destroy_all
 Dog.destroy_all
 Dogsitter.destroy_all
 Stoll.destroy_all
-m = City.create(city: "Marseille" )
-m1 = City.create(city: "Paris" )
-d = Dog.create(name: "Kayko", city: m)
-d1 = Dog.create(name: "Cartouche", city: m1)
-d2 = Dog.create(name: "Hunter", city: m)
-sitter = Dogsitter.create(name: "Yve", city: m)
-sitter1 = Dogsitter.create(name: "Jean", city: m1)
-sitter2 = Dogsitter.create(name: "Michel")
+100.times do
+
+m = City.create(city: Faker::Address.city )
+d = Dog.create(name: Faker::FunnyName.name, city: m)
+d = Dog.all.sample
+sitter = Dogsitter.create(name: Faker::Name.name, city: m)
+sitter = Dogsitter.all.sample
 Stoll.create(dog: d,dogsitter: sitter, city: m)
+end
